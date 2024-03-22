@@ -12,6 +12,8 @@
 #include <iostream>
 #include <string>
 
+#define LOGGING_ENABLED
+
 int main()
 {
   // Configure stdio

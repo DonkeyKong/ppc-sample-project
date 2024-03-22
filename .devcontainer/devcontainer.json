@@ -8,5 +8,8 @@
 		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
 		"dockerfile": "../Dockerfile"
 	},
-  "customizations": {"vscode": {"extensions": ["ms-vscode.vscode-cpptools","ms-vscode.cpptools-extension-pack", "ms-vscode.vscode-cmake-tools"]}}
+  "customizations": {"vscode": {"extensions": ["ms-vscode.vscode-cpptools","ms-vscode.cpptools-extension-pack", "ms-vscode.vscode-cmake-tools"]}},
+  "mounts": [
+    "source=${localWorkspaceFolder}/../pico-sdk,target=/pico-sdk,type=bind,consistency=cached"
+  ]
 }
