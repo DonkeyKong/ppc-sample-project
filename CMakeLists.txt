@@ -30,7 +30,7 @@ set(PI_PICO_CPP_DIR "${CMAKE_CURRENT_LIST_DIR}/pi-pico-cpp")
 set(PICO_CXX_ENABLE_EXCEPTIONS 0)
 set(PICO_CXX_ENABLE_RTTI 0)
 
-# Pull in pico SDK (must be before project)
+# Pull in SDK (must be before project)
 include(pico_sdk_import.cmake)
 include(pico_extras_import_optional.cmake)
 if (PICO_SDK_VERSION_STRING VERSION_LESS "1.3.0")
@@ -45,7 +45,7 @@ set(CMAKE_CXX_STANDARD 17)
 # Initialize the SDK
 pico_sdk_init()
 
-# Create the executable and add source files
+# Create the project executable and add source files
 add_executable(${PROJECT_NAME}
         main.cpp
 )
